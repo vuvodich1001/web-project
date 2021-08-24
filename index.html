@@ -98,7 +98,7 @@
                                 Trợ giúp</a>
                         </li>
                         <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate"
-                            onclick="">Đăng
+                            onclick="showRegister();">Đăng
                             ký</li>
                         <li class="header__navbar-item header__navbar-item--strong" onclick="showLogin();">Đăng nhập
                         </li>
@@ -244,11 +244,11 @@
         </header>
     </div>
 
-    <!-- <div class="modal">
+    <div class="modal modal--no-active">
         <div class="modal__overlay"></div>
-        <div class="modal__body"> -->
-    <!-- Register form -->
-    <!-- <div class="auth-form">
+        <div class="modal__body">
+            <!-- Register form -->
+            <div class="auth-form auth-form-register">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng ký</h3>
@@ -291,9 +291,9 @@
                         <span class="auth-form__social-title">Kết nối với Google</span>
                     </a>
                 </div>
-            </div> -->
-    <!-- Login form -->
-    <!-- <div class="auth-form">
+            </div>
+            <!-- Login form -->
+            <div class="auth-form auth-form-login">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng nhập</h3>
@@ -332,9 +332,10 @@
                         <span class="auth-form__social-title">Kết nối với Google</span>
                     </a>
                 </div>
-            </div> -->
-    <!-- </div>
-    </div> -->
+            </div>
+        </div>
+    </div>
+
     <div class="app__container">
         <div class="grid">
             <div class="grid__row">
@@ -944,13 +945,14 @@
             </div>
             <div class="grid__row">
                 <p class="footer-copyright">
-                    @Bản quyền thuộc về F8
+                    <i class="far fa-copyright"></i>
+                    Bản quyền thuộc về F8
                 </p>
             </div>
         </div>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="./app.js"></script>
 </body>
 
 </html>

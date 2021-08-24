@@ -90,8 +90,17 @@ html {
   left: 0;
   display: flex;
   animation: fadeIn linear 0.1s;
+  z-index: 1;
 }
 
+.modal--no-active {
+  display: none;
+}
+
+.auth-form-login,
+.auth-form-register {
+  display: none;
+}
 .modal__overlay {
   position: absolute;
   width: 100%;
@@ -156,7 +165,7 @@ html {
 /* Footer */
 .footer-title {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 .footer-list {
   list-style: none;
